@@ -3,14 +3,71 @@
 $fontFamily: 'Kumbh Sans', sans-serif;
 
 // Primary Colours
-$darkCyan: hsl (185, 75%, 39&);
-$vDarkCyan: hsl (229, 23%, 23%);
-$darkBlue: hsl (227, 10%, 45%);
+$darkCyan: #19A2AE;
+$vDarkCyan: #2D3248;
+$darkBlue: #676C7E;
 
 // Neutral Colours
-$darkGray: hsl (0, 0%, 59%);
+$darkGray: #969696;
 
 * {
     font-family: $fontFamily;
     font-size: 18px;
+}
+
+body {
+    background-color: $darkCyan;
+}
+
+h1 {
+    color: $vDarkCyan;
+    font-weight: 700;
+}
+
+p {
+    color: $darkGray;
+    font-weight: 400;
+}
+
+.card {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 10%;
+}
+
+.card-top {
+    background-color: $darkCyan;
+    height: 100px;
+}
+
+.card-bottom {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.pic {
+    border-radius: 50%;
+    position: relative;
+    // flex: auto;
+    left: 90%;
+    transform: translateY(-50%);
+    border: 5px solid #fff;
+
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    align-items: center;
+    font-size: 11px; text-align: center;
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
 }
