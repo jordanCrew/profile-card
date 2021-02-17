@@ -1,6 +1,7 @@
 /* Variables */
 
 $fontFamily: 'Kumbh Sans', sans-serif;
+$borderRadius: 15px;
 
 // Primary Colours
 $darkCyan: #19A2AE;
@@ -13,6 +14,8 @@ $darkGray: #969696;
 * {
     font-family: $fontFamily;
     font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -27,6 +30,7 @@ h1 {
 p {
     color: $darkGray;
     font-weight: 400;
+    font-size: 12px;
 }
 
 .card {
@@ -35,28 +39,69 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
-    border-radius: 10%;
+    border-radius: $borderRadius;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    1px 1px 3px 0px rgba(0, 0, 0, 0.2); 
+    box-shadow:         1px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card-top {
-    background-color: $darkCyan;
-    height: 100px;
+    background-image: url("images/bg-pattern-card.svg");
+    height: 150px;
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
 }
 
 .card-bottom {
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
+    border-bottom-left-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
 }
 
 .pic {
     border-radius: 50%;
-    position: relative;
-    // flex: auto;
-    left: 90%;
+    position: absolute;
+    left: 35%;
     transform: translateY(-50%);
     border: 5px solid #fff;
+}
 
+.address {
+    border-bottom: solid 1px $darkGray;
+    padding-top: 75px;
+}
+
+.first-line {
+    text-align: center;
+    h1 {
+        display: inline;
+    }
+    p{
+        display: inline;
+        font-size: 18px;
+    }
+}
+
+.second-line {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.stats div {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stats p {
+    margin-top: 5px;
 }
 
 .attribution { 
