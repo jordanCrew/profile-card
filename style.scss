@@ -1,1 +1,16 @@
+/* Variables */
 
+$fontFamily: 'Kumbh Sans', sans-serif;
+
+// Primary Colours
+$darkCyan: hsl (185, 75%, 39&);
+$vDarkCyan: hsl (229, 23%, 23%);
+$darkBlue: hsl (227, 10%, 45%);
+
+// Neutral Colours
+$darkGray: hsl (0, 0%, 59%);
+
+* {
+    font-family: $fontFamily;
+    font-size: 18px;
+}
