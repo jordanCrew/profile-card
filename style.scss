@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
     background-color: $darkCyan;
     background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-position-x: -65%, 165%;
     background-position-y: 751%, -750%; 
 }
@@ -53,6 +53,7 @@ p {
     transform: translate(-50%, -50%);
     width: 300px;
     border-radius: $borderRadius;
+    overflow: hidden;
     -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow:    1px 1px 3px 0px rgba(0, 0, 0, 0.2); 
     box-shadow:         1px 1px 3px 0px rgba(0, 0, 0, 0.2);
@@ -61,14 +62,14 @@ p {
 .card-top {
     background-image: url("images/bg-pattern-card.svg");
     height: 150px;
-    border-top-left-radius: $borderRadius;
-    border-top-right-radius: $borderRadius;
+    // border-top-left-radius: $borderRadius;
+    // border-top-right-radius: $borderRadius;
 }
 
 .card-bottom {
     background-color: #fff;
-    border-bottom-left-radius: $borderRadius;
-    border-bottom-right-radius: $borderRadius;
+    // border-bottom-left-radius: $borderRadius;
+    // border-bottom-right-radius: $borderRadius;
 }
 
 .pic {

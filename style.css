@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   background-color: #19A2AE;
   background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
   background-position-x: -65%, 165%;
   background-position-y: 751%, -750%;
 }
@@ -40,6 +40,7 @@ p {
   transform: translate(-50%, -50%);
   width: 300px;
   border-radius: 15px;
+  overflow: hidden;
   -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
@@ -48,14 +49,10 @@ p {
 .card-top {
   background-image: url("images/bg-pattern-card.svg");
   height: 150px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 .card-bottom {
   background-color: #fff;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .pic {
